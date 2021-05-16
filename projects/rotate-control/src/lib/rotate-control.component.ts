@@ -12,9 +12,10 @@ export class RotateControlComponent implements OnInit {
 
   @Input() angle: number = 0;
   @Input() radius: number = 50;
-  @Input() borderColor: any = '#fff';
+  @Input() borderColor: any = '#000';
+  @Input() borderWidth: any = '1';
 
-  @Output() onAngleChange: EventEmitter<any> = new EventEmitter();
+  @Output() angleChange: EventEmitter<any> = new EventEmitter();
   @Output() onAngleChangeEnd: EventEmitter<any> = new EventEmitter();
 
   degree: any = 0;
@@ -106,7 +107,7 @@ export class RotateControlComponent implements OnInit {
       }
       this.angle = this.convertDegreeToAngle(Math.round(this.degree));
       this.rotationControl.nativeElement.style.cssText = '-moz-transform: rotate(' + this.degree + 'deg); -webkit-transform: rotate(' + this.degree + 'deg); -o-transform: rotate(' + this.degree + 'deg); -ms-transform: rotate(' + this.degree + 'deg);';
-      this.onAngleChange.emit(this.angle);
+      this.angleChange.emit(this.angle);
       this.valuePreview.nativeElement.innerText = this.angle;
     }
   }

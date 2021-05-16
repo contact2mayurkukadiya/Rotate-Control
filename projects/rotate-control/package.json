@@ -1,6 +1,6 @@
 {
     "name": "rotate-control",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "peerDependencies": {
         "@angular/common": "^11.2.14",
         "@angular/core": "^11.2.14"
