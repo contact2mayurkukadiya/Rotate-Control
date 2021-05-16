@@ -13,7 +13,9 @@ export class RotateControlComponent implements OnInit {
   @Input() angle: number = 0;
   @Input() radius: number = 50;
   @Input() borderColor: any = '#000';
-  @Input() borderWidth: any = '1';
+  @Input() borderWidth: any = 1;
+  @Input() valueContainerClass: any = '';
+  
 
   @Output() angleChange: EventEmitter<any> = new EventEmitter();
   @Output() onAngleChangeEnd: EventEmitter<any> = new EventEmitter();
@@ -27,6 +29,12 @@ export class RotateControlComponent implements OnInit {
 
 
   constructor(private el: ElementRef) {
+    // Validate properties
+    this.radius < 15 ? this.radius = 15 : null;
+    this.radius >= 50 ? this.radius = 50 : null;
+    this.borderWidth < 1 ? this.borderWidth = 1 : null;
+    this.borderWidth > 10 ? this.borderWidth = 10 : null;
+
     el.nativeElement.style.display = 'inline-block';
   }
 

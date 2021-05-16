@@ -5,6 +5,6 @@
             <div class="drag-control-rotation" #dragControl [ngStyle]="{'background-color': borderColor}"></div>
             <div class="drag-control-line" [ngStyle]="{'width': radius + 'px', 'background-color': borderColor}"></div>
         </div>
-        <span class="value-preview" [ngClass]="{'display-block': isRotating}" #valuePreview>{{angle}}</span>
+        <span class="value-preview {{valueContainerClass}}" [ngClass]="{'display-block': isRotating}" #valuePreview>{{angle}}</span>
     </div>
 </div>
