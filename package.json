@@ -4,7 +4,10 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
+        "outerVersion": "npm verison --no-git-tag-version",
+        "innerVersion": "cd projects/rotate-control && npm version ",
+        "build": "cd projects/rotate-control && ng build rotate-control --prod",
+        "publish": "cd dist/rotate-control && npm publish",
         "test": "ng test",
         "lint": "ng lint"
     },
