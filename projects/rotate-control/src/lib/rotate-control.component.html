@@ -1,0 +1,10 @@
+<div class="circular-angle-control-wrapper" [ngStyle]="{'min-width': radius * 2 + 'px', 'min-height': radius * 2 + 'px'}">
+    <div class="parimeter" [ngStyle]="{'border-color': borderColor, 'width': radius * 2 + 'px', 'height': radius * 2 + 'px', 'border-radius': radius + 'px'}">
+        <div class="parimeter-center" [ngStyle]="{'background-color': borderColor}"></div>
+        <div class="drag-control" #rotationControl (mousedown)="onMouseDown($event)" [ngStyle]="{'width': radius * 2 + 'px', 'height': radius * 2 + 'px'}">
+            <div class="drag-control-rotation" #dragControl [ngStyle]="{'background-color': borderColor}"></div>
+            <div class="drag-control-line" [ngStyle]="{'width': radius + 'px', 'background-color': borderColor}"></div>
+        </div>
+        <span class="value-preview" [ngClass]="{'display-block': isRotating}" #valuePreview>{{angle}}</span>
+    </div>
+</div>

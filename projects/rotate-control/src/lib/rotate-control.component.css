@@ -1,0 +1,71 @@
+.parimeter {
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+}
+
+.parimeter-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.drag-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.drag-control-rotation {
+    position: absolute;
+    right: calc(0px - 6px);
+    top: calc(50% - 5px);
+    background: red;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.drag-control-line {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 1px);
+    height: 2px;
+}
+
+.value-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 18px;
+    margin: auto;
+    text-align: center;
+    line-height: 18px;
+    max-height: 18px;
+    padding: 2px 5px;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    border-radius: 3px;
+    transition: 0.5s;
+    user-select: none;
+    display: none;
+}
+
+.display-block,
+.parimeter:hover .value-preview {
+    display: block;
+}
