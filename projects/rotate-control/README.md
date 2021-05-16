@@ -6,6 +6,9 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 This Package is fully supported with angular's various version and written in angular. This provide simple drag UI for change angle. Package is configurable with multiple directives and support two way bindind.
 
+## Preview of control
+
+![Preview of control](https://raw.githubusercontent.com/contact2mayurkukadiya/Rotate-Control/master/assets/preview.PNG)
 ## How to Use Package
 
 Import `RotateControlModule` into your `app.module.ts` like Below :
