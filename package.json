@@ -8,6 +8,7 @@
         "innerVersion": "cd projects/rotate-control && npm version ",
         "build": "cd projects/rotate-control && ng build rotate-control --prod",
         "publish": "cd dist/rotate-control && npm publish",
+        "build-sample": "ng build --prod",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
