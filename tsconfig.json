@@ -13,8 +13,9 @@
     "target": "es2015",
     "paths": {
       "rotate-control": [
+        "projects/rotate-control/src/lib",
         "dist/rotate-control/rotate-control",
-        "dist/rotate-control"
+        "dist/rotate-control",
       ]
     },
     "module": "es2020",
@@ -23,6 +24,13 @@
       "dom"
     ]
   },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
   }

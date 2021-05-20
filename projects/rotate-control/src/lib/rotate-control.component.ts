@@ -15,7 +15,7 @@ export class RotateControlComponent implements OnInit {
   @Input() borderColor: any = '#000';
   @Input() borderWidth: any = 1;
   @Input() valueContainerClass: any = '';
-  
+
 
   @Output() angleChange: EventEmitter<any> = new EventEmitter();
   @Output() onAngleChangeEnd: EventEmitter<any> = new EventEmitter();
@@ -45,8 +45,7 @@ export class RotateControlComponent implements OnInit {
     this.initialize();
   }
 
-  ngOnChanges(changes: { [propKey: string]: SimpleChange }) {
-    // this is because when we change array of color dynamically, we need to reflect it in this control
+  ngOnChanges(_changes: { [propKey: string]: SimpleChange }) {
     this.initialize();
   }
 
@@ -66,6 +65,22 @@ export class RotateControlComponent implements OnInit {
         y: rect.top + win.pageYOffset,
         x: rect.left + win.pageXOffset
       });
+  }
+
+  onMouseScroll(event) {
+    let changes = event.deltaY * 0.01  // changes = -1 or +1
+    this.degree = parseInt(this.degree + changes);
+    if (this.degree < 0) {
+      this.degree = 360;
+    }
+    if (this.degree > 360) {
+      this.degree = 0;
+    }
+    this.angle = this.convertDegreeToAngle(this.degree);
+    this.rotationControl.nativeElement.style.cssText = '-moz-transform: rotate(' + this.degree + 'deg); -webkit-transform: rotate(' + this.degree + 'deg); -o-transform: rotate(' + this.degree + 'deg); -ms-transform: rotate(' + this.degree + 'deg);';
+    this.angleChange.emit(this.angle);
+    this.valuePreview.nativeElement.innerText = this.angle;
+    this.onAngleChangeEnd.emit(this.angle);
   }
 
   onMouseDown($event) {

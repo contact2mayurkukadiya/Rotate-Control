@@ -1,4 +1,4 @@
-# RotateControl
+# rotate-control
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
@@ -9,6 +9,8 @@ This Package is fully supported with angular's various version and written in an
 ## Preview of control
 
 ![Preview of control](https://raw.githubusercontent.com/contact2mayurkukadiya/Rotate-Control/master/assets/preview.PNG)
+
+![Live Demo Here]()
 ## How to Use Package
 
 Import `RotateControlModule` into your `app.module.ts` like Below :
@@ -49,6 +51,8 @@ angleChange | Fire and return angle value in `$event` when drag pin in control.
 onAngleChangeEnd | Fire and return angle value in `$event` when drag end and mouse up event of pin in control.
 
 ## Examples
+
+
 
 ```html
 <rotate-control [angle]="angle" (angleChange)="angleChange($event)"></rotate-control>
