@@ -78,7 +78,7 @@ Each and every things that on a internet is written and develop by someone with 
 
 [![Buy me a Coffee][1]][2]
 
-[1]:  http://commonmark.org/help/images/favicon.png
+[1]:  https://raw.githubusercontent.com/contact2mayurkukadiya/Rotate-Control/master/assets/bmc-new-logo.webp
 [2]:  https://www.buymeacoffee.com/mayurKukadiya
 ## Further help
 
