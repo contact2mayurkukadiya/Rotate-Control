@@ -73,6 +73,13 @@ in above merged directive, `angle` variable will be automatic update on value ch
 <rotate-control [(angle)]="angle" radius="30" borderColor="#ff0000" borderWidth="2" valueContainerClass="preview" (onAngleChangeEnd)="afterAngleChange($event)"></rotate-control>
 ```
 
+## Help
+Each and every things that on a internet is written and develop by someone with lot's of efforts and time. You can empower them to do more and best work for others who can freely use that by Buying them a coffee.
+
+[![Buy me a Coffee][1]][2]
+
+[1]:  http://commonmark.org/help/images/favicon.png
+[2]:  https://www.buymeacoffee.com/mayurKukadiya
 ## Further help
 
 To get more help on the this Control. Contact me on this email [contact2mayurkukadiya@gmail.com](mailto:contact2mayurkukadiya@gmail.com)
