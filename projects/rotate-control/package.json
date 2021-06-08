@@ -1,6 +1,6 @@
 {
     "name": "rotate-control",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "author": "Mayur Kukadiya",
     "description": "Angular package that provide one reusable component for change angle value by using mouse dragging.",
     "private": false,
