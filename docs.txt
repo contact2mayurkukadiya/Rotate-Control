@@ -3,7 +3,7 @@ https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on
 Steps : 
 1. make a angular project build with `npm run build-sample`
 2. commit build in master (build for this project is done in docs folder.)
-3. run this command : git subtree push --prefix docs origin <tobe-new branch name> 
+3. run this command : git subtree push --prefix docs origin gh-pages <tobe-new branch name> 
 4. above command will create new branch
 5. open that branch in github.com
 6. goto setting in last tab.
